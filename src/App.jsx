@@ -560,7 +560,7 @@ export default function App() {
         fontFamily:"'Share Tech Mono'", fontSize:10, color:'#ffffff22',
         zIndex:10, textAlign:'center',
       }}>
-        CLUSTER GALAXY v1.0 · Built for K8s Class · Click planets to inspect namespaces
+        CLUSTER GALAXY v1.0 · Built for K8s  · Click planets to inspect namespaces
       </div>
     </div>
   )
