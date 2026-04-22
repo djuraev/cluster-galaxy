@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cluster-galaxy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cluster-galaxy
+  template:
+    metadata:
+      labels:
+        app: cluster-galaxy
+    spec:
+      containers:
+      - name: cluster-galaxy
+        image: abradox/cluster-galaxy
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        
