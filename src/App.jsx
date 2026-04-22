@@ -4,8 +4,8 @@ import React, { useEffect, useRef, useState, useCallback } from 'react'
 const NAMESPACE_CONFIGS = [
   { name: 'default',       color: '#00d4ff', glowColor: '#00d4ff44', size: 54, orbitRadius: 200, speed: 0.00018 },
   { name: 'kube-system',   color: '#ff6b35', glowColor: '#ff6b3544', size: 46, orbitRadius: 320, speed: 0.00012 },
-  //{ name: 'monitoring',    color: '#a855f7', glowColor: '#a855f744', size: 40, orbitRadius: 440, speed: 0.00009 },
-  //{ name: 'ingress-nginx', color: '#22d3ee', glowColor: '#22d3ee44', size: 36, orbitRadius: 550, speed: 0.00007 },
+  { name: 'monitoring',    color: '#a855f7', glowColor: '#a855f744', size: 40, orbitRadius: 440, speed: 0.00009 },
+  { name: 'ingress-nginx', color: '#22d3ee', glowColor: '#22d3ee44', size: 36, orbitRadius: 550, speed: 0.00007 },
   //{ name: 'production',    color: '#f59e0b', glowColor: '#f59e0b44', size: 50, orbitRadius: 660, speed: 0.00006 },
   //{ name: 'Tashkent',    color: '#f59e0b', glowColor: '#f59e0b44', size: 50, orbitRadius: 660, speed: 0.00006 },
 ]
@@ -15,8 +15,8 @@ const POD_STATES = ['Running', 'Running', 'Running', 'Pending', 'CrashLoopBackOf
 const INITIAL_PODS = {
   'default':       4,
   'kube-system':   6,
- // 'monitoring':    3,
-  //'ingress-nginx': 2,
+  'monitoring':    3,
+  'ingress-nginx': 2,
   //'production':    5,
   //'Tashkent': 8,
 }
